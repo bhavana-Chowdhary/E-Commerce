@@ -1,0 +1,56 @@
+#picture{
+    background-color: #ffe6e6;
+    text-align: center;  
+}
+.banner img{
+    height: 450px;
+    width: 100%;
+    
+}
+.banner{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container{
+    padding: 20% 0% ;
+    box-shadow: 1px 4px 10px 2px;
+    
+}
+.con{
+    text-align: center;
+    padding: 5% 50% 5% 5%;
+}
+.container input{
+    margin: 2%;
+    border: none;
+    border-bottom: 3px solid;
+    padding: 1px;
+    background-color:  #ffe6e6;
+    width: 60%;
+    outline: none;
+   
+}
+.container h2{
+    font-weight: 700;
+    font-size: 7vh;
+}
+.container button{
+    border: none;
+    background-color: orangered;
+    color: white;
+    width: 60%;
+
+}
+/* icons */
+.container i{
+    color: orangered;
+}
+#picture h1{
+   margin-left: -40%;
+   font-weight: 700;
+
+}
+#picture p{
+    margin-left: -40%;
+
+}

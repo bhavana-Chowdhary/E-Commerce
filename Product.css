@@ -1,0 +1,180 @@
+.name {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 2px 10px 0px;
+
+
+}
+
+.heading {
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+    color: rgb(35, 244, 35);
+    font-size: 3vh;
+    font-weight: 500;
+
+
+}
+
+.heading li {
+    padding: 20px;
+}
+
+.heading i {
+    padding: 20px;
+    margin-top: -20%;
+}
+
+.heading a{
+    text-decoration: none;
+    color: greenyellow;
+}
+.heading  a:hover{
+    color: green;
+}
+
+#hero-banner button {
+    margin-top: 2%;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+#hero-banner button:hover {
+    background-color: blue;
+
+}
+
+#hero-banner {
+    background-image: url("./images/hero-banner.jpg");
+    background-position: center;
+    padding: 10% 20%;
+}
+
+/* icons  */
+#features {
+    display: flex;
+    margin: 5%;
+    justify-content: space-evenly;
+    animation: move 5s infinite linear;
+
+}
+
+@keyframes move{
+    0%{
+        transform:translateY(0);
+        
+    }
+    25%{
+        transform:translateY(15%);
+        
+    }
+    50%{
+        transform:translateY(0);
+        
+    }
+    75%{
+        transform:translateY(-15%);
+        
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+#features div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#hero-banner h2 {
+    color: red;
+
+}
+
+#hero-banner h4 {
+    font-family: scyan;
+}
+
+/* products decoration */
+#products {
+    margin: 5%;
+    text-align: center;
+}
+
+#productList{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+#cartdec img {
+    height: 300px;
+    width: 100%;
+}
+#cartdec div {
+    margin: 20px;
+    box-shadow: 1px 1px 10px 0px;
+    /* text-align: left; */
+}
+
+#cartdec h5 {
+    color: rgb(13, 151, 151);
+    padding: 2px 20px;
+
+}
+
+#cartdec h6 {
+    color: orangered;
+    padding: 0 20px;
+}
+
+#cartdec button {
+    margin: 3%;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    padding: 5px 20px;
+    border: none;
+
+}
+#cartdec button:hover{
+    background-color: blue;
+    color: black;
+}
+/* footer decaration starts here */
+#footer{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    padding: 10px;
+    color:whitesmoke ;
+    text-align: center;
+    
+}
+#footer h3{
+    color: white;
+    text-align: center;
+
+
+}
+
+#footer li{
+    list-style: none;
+    text-align: center;
+    
+}
+#text{
+    text-align: center;
+    background-color: black;
+    color:whitesmoke ;
+}
+#footer img{
+    height: 70px;
+    width: 60%;
+
+}
