@@ -21,14 +21,17 @@
         <div class="logo">
             <img src="./achieversit.png" alt="..............">
         </div>
-        <ul class="heading">
-            <li> <a href="./index.html">Home </a></li>
-            <li> <a href="./Products.html">Products </a></li>
-            <li> <a href="./Blog.html">Blog </a></li>
-            <li> <a href="./Register.html">Account </a></li>
-            <li> <a href="./cart.html"><i class="fa-solid fa-bag-shopping"></i></a> </li>
-        </ul>
-
+        <section>
+            <button onclick="getData(true)" class="on"><i class="fa-solid fa-list"></i></button>
+            <ul class="heading" id="notp">
+                <button onclick="getData(false)" class="on" id="Micon"><i class="fa-solid fa-list"></i></button>
+                <li> <a href="./index.html">Home </a></li>
+                <li> <a href="./Products.html">Products </a></li>
+                <li> <a href="./Blog.html">Blog </a></li>
+                <li> <a href="./Register.html">Account </a></li>
+                <li> <a href="./cart.html"><i class="fa-solid fa-bag-shopping"></i></a> </li>
+            </ul>
+        </section>
     </section>
     <!-- second heading by using bootstrap Starts here -->
     <section>
@@ -72,7 +75,7 @@
     </section>
     <section id="heading_3">
         <h4>Latest Products</h4>
-        <div id="heading_">
+        <div id="heading_4">
             <div>
                 <img src="./images/newproduct.jpg" alt="..............">
                 <span>Smart Watch</span>
@@ -91,7 +94,7 @@
             </div>
             <div>
                 <img src="./images/newproduct-4.jpg" alt="..........">
-                <span>Women Clothing</span>
+                <span>WomenClothing</span>
             </div>
             <div>
                 <img src="./images/newproduct-5.jpg" alt="..........">
@@ -154,17 +157,16 @@
                 <p>Our Purpose Is To Sustainably Make the Pleasure and Benifits of<br>
                     Sports Accessible to the Many.</p>
             </div>
-            <div>
-                <h3>Follow Us</h3>
+        </div>
+        <div>
+            <h3>Follow Us</h3>
             <ul>
                 <li>Facebook</li>
                 <li>Twitter</li>
                 <li>Instagram</li>
                 <li>Youtube</li>
             </ul>
-            </div>
         </div>
-
         <div>
             <h3>Useful Links</h3>
             <ul>
@@ -178,6 +180,7 @@
     <div>
         <p id="text">Copyright 2024-Bhavana Chowdhary</p>
     </div>
+    <script src="./index.js"></script>
     
 </body>
 

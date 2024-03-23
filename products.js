@@ -77,17 +77,16 @@ const productsAPI = [
     price: 599,
     img: "/assests/images/newproduct-5.jpg",
   },
-  
+
 ];
 
 function renderProduct(product) {
-  // Add a data attribute to the button for identifying the product
   return `
     <div class="product-item" data-product-id="${product.id}">
          <img src="${product.img}" alt="${product.name}">
           <h5>${product.name}</h5>
           <h6>$${product.price}</h6>
-          <button class="add-to-cart-btn" data-product-id="${product.id}">Add to Cart</button>
+          <button class="add-to-cart-btn" data-product-id="${product.id}">Add to Cart</button> 
     </div>
   `;
 }
@@ -96,8 +95,8 @@ function renderProducts(products) {
   const productList = document.getElementById('productList');
   productList.innerHTML = products.map(renderProduct).join('');
 
-  document.querySelectorAll('.add-to-cart-btn').forEach(button => {
-    button.addEventListener('click', function () {
+  document.querySelectorAll('.add-to-cart-btn').forEach(Button => {
+    Button.addEventListener('click', function () {
       const productId = this.getAttribute('data-product-id');
       addProductToCart(productId);
       alert("Product Added")
@@ -121,7 +120,19 @@ function addProductToCart(productId) {
 
 renderProducts(productsAPI);
 
-// here start diplay to cart
+
+const getData = (isDisplay) => {
+  if (isDisplay == true) {
+    document.getElementById("notp").classList.add("headClass");
+    document.getElementsByClassName("on")[0].classList.add("don")
+    document.getElementsByClassName("on")[1].classList.remove("don")
+  }
+  else {
+    document.getElementById("notp").classList.remove("headClass");
+    document.getElementsByClassName("on")[0].classList.remove("don")
+    document.getElementsByClassName("on")[1].classList.add("don")
+  }
+}
 
 
 

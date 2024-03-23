@@ -23,19 +23,22 @@
         <div class="logo">
             <img src="./achieversit.png" alt="..............">
         </div>
-        <ul class="heading">
-            <li> <a href="./index.html">Home </a></li>
-            <li> <a href="./Products.html">Products </a></li>
-            <li> <a href="./Blog.html">Blog </a></li>
-            <li> <a href="./Register.html">Account </a></li>
-            <li> <a href="./cart.html"><i class="fa-solid fa-bag-shopping"></i></a> </li>
-        </ul>
+        <section>
+            <button onclick="getData(true)" class="on"><i class="fa-solid fa-list"></i></button>
+            <ul class="heading" id="notp">
+                <button onclick="getData(false)" class="on" id="Micon"><i class="fa-solid fa-list"></i></button>
+                <li> <a href="./index.html">Home </a></li>
+                <li> <a href="./Products.html">Products </a></li>
+                <li> <a href="./Blog.html">Blog </a></li>
+                <li> <a href="./Register.html">Account </a></li>
+                <li> <a href="./cart.html"><i class="fa-solid fa-bag-shopping"></i></a> </li>
+            </ul>
+        </section>
     </section>
     <div id="cartItemsContainer" class="cart_body">
     </div>
     <center id="footer_cart">
-        <h1 id="totalPriceContainer">Total Price:$0</h1>
-
+        <h2 id="totalPriceContainer">Total Price: $0</h2>
     </center>
 
     <script src="./cart.js">
